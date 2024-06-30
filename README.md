@@ -27,8 +27,21 @@ This project demonstrates how to create a comprehensive e-commerce store using t
 
 To clone and run this project locally, follow these steps:
 
-1. **Clone the repository:**
-
 ```bash
+# Clone the repository
 git clone https://github.com/dami77del/portfolio-React.git
 cd portfolio-React
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cat <<EOT >> .env
+NEXT_PUBLIC_STRIPE_KEY=your_stripe_key
+DATABASE_URL=your_database_url
+REDIS_URL=your_redis_url
+KINDE_AUTH_KEY=your_kinde_auth_key
+EOT
+
+# Start the application
+npm run dev
