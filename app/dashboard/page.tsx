@@ -1,9 +1,8 @@
-export default function Dashboard(){
-    return(
-            <div>
-            <h1> Hello from Dashboard
-
-            </h1>
-            </div>
+export default function Dashboard() {
+    return (
+        <>
+        <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+        </div>
+        </>
     )
 }
