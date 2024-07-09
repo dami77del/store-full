@@ -64,7 +64,7 @@ export function EditForm({ data } : iAppprops) {
         <Card className="mt-5">
             <CardHeader>
                 <CardTitle>Product Details</CardTitle>
-                <CardDescription>In this form you can create your product</CardDescription>
+                <CardDescription>In this form you can update this product</CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="flex flex-col gap-6">
@@ -95,7 +95,7 @@ export function EditForm({ data } : iAppprops) {
                     </div>
                     <div className=" flex flex-col gap-3">
                         <Label>Feature Product</Label>
-                        <Switch key={fields.isFeatured.key} name={fields.isFeatured.name}   checked={data.isFeatured}/>
+                        <Switch key={fields.isFeatured.key} name={fields.isFeatured.name}  defaultChecked={data.isFeatured}/>
                         <p className="text-red-500">{fields.isFeatured.errors}</p>
                     </div>
                     <div className="flex flex-col gap-3">
@@ -164,7 +164,7 @@ export function EditForm({ data } : iAppprops) {
                 </div>
             </CardContent>
             <CardFooter>
-                <SubmitButton/>
+                <SubmitButton text="Edit Product"/>
             </CardFooter>
         </Card>
     </form>
