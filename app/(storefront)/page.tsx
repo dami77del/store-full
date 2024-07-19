@@ -1,10 +1,15 @@
+import { CategorySelection } from "../components/storefront/CategorySelection"
+import { FeatureProducts } from "../components/storefront/FeatureProducts"
+import { Hero } from "../components/storefront/Hero"
 import { NavBar } from "../components/storefront/NavBar"
 
-export default function IndexPage(){
+export default function IndexPage() {
 
-    return (
+  return (
     <div>
-      <h1>Hello from the storefront page.tsx </h1>
+      <Hero />
+      <CategorySelection/>
+      <FeatureProducts/>
     </div>
-    )
+  )
 }
